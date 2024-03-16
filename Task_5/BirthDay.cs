@@ -27,16 +27,16 @@ namespace Task_5
 
         public static int CountDays(DateTime birthDate)
         {
-            DateTime now = DateTime.Today;
-            DateTime thisBirthDay = new DateTime(now.Year, birthDate.Month, birthDate.Day);
+            DateTime today = DateTime.Today;
+            DateTime thisBirthDate = new DateTime(today.Year, birthDate.Month, birthDate.Day);
 
-            if (thisBirthDay > now)
+            if (thisBirthDate > today)
             {
-                return (thisBirthDay - now).Days;
+                return (thisBirthDate - today).Days;
             }
             else
             {
-                return (thisBirthDay.AddYears(1) - now).Days;
+                return (thisBirthDate.AddYears(1) - today).Days;
             }
         }
     }
