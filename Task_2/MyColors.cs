@@ -2,7 +2,7 @@
 {
     internal static class MyColors
     {
-        enum Colors 
+        enum Colors //Як класи, інтерфейси. Enum треба виділяти в окремі файли
         {
             Black = 0,
             DarkBlue = 1,
